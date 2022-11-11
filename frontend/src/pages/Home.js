@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Home = () => {
+  const [user, setuser] = useState(0)
   return (
-    <div>home</div>
+    <div>
+      home
+    </div>
   )
 }
 

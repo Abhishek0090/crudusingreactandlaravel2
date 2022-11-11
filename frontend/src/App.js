@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Create from './pages/Create';
+import Edit from './pages/Edit';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             <li class="nav-item">
               <Link class="nav-link" to="/create">Create</Link>
             </li> 
+            <li class="nav-item">
+              <Link class="nav-link" to="/edit">Edit</Link>
+            </li> 
         </ul> 
       </div>
     </div>
@@ -36,6 +40,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/create' element={<Create/>}/>
+    <Route path='/edit' element={<Edit/>}/>
     </Routes>
     </div>
     </>
