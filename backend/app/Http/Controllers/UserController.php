@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -13,8 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
-    }
+        return response()->json(User::get());
+     }
+
 
     /**
      * Show the form for creating a new resource.
